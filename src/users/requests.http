@@ -1,0 +1,42 @@
+### Crear un nuevo usuario
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+  "email":"riri@gmail.com",
+  "password": "12345"
+}
+
+### Iniciar sesión 
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+  "email":"riri@gmail.com",
+  "password": "12345"
+}
+
+### Tener el último usuario quién inició sesión (el más reciente)
+GET http://localhost:3000/auth/whoami
+
+### Cerrar sesión
+POST http://localhost:3000/auth/signout
+
+### Encontrar un usuario en particular
+GET http://localhost:3000/auth/3
+
+### Encontrar todos los usuarios dado un email
+GET http://localhost:3000/auth?email=asdf@asdf.com
+
+### Eliminar usuario dado un ID
+
+DELETE http://localhost:3000/auth/1
+
+### Actualizar Usuario
+
+PATCH http://localhost:3000/auth/3
+content-type: application/json
+
+{
+  "email": "carolina2015@gmail.com"
+}
