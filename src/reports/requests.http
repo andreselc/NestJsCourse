@@ -13,7 +13,7 @@ content-type: application/json
 }
 
 ###Aprobar un reporte existente
-PATCH http://localhost:3000/reports/1
+PATCH http://localhost:3000/reports/3
 content-type: application/json
 
 {

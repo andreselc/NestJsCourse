@@ -7,9 +7,7 @@ const scrypt =promisify(_scrypt);
 
 @Injectable()
 export class AuthService{
-  constructor(private usersService: UsersService){
-
-  }
+  constructor(private usersService: UsersService){}
 
   async signup(email: string, password: string){
     //Ver si el email está ya en uso
@@ -32,7 +30,6 @@ export class AuthService{
 
     //Retornar el usuario
     return user;
-
   }
 
   async signin(email: string, password: string){

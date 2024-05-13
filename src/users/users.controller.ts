@@ -21,7 +21,7 @@ import { AuthGuard } from '../guards/auth.guard';
 
 //NOTA: Recuerda que Session es para manejar los cookies.
 @Controller('auth') //Recuerda que este es como un prefijo para nuestras rutas
-@Serialize(UserDto) //Uso global del decorador
+
 
 export class UsersController {
 
@@ -36,7 +36,6 @@ export class UsersController {
  @Post("/signout")
  signOut(@Session() session: any){
   session.userId= null;
-
  }
 
  @Post("/signup")

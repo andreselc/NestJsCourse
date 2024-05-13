@@ -19,7 +19,7 @@ export class User {
   @Column({ default: true })
   admin: boolean;
 
-  @OneToMany(() => Report, (report) => report.user) //Esto no establece un cambio en la tabala de Usuarios
+  @OneToMany(() => Report, (report) => report) //Esto no establece un cambio en la tabala de Usuarios
   reports: Report[];
   
   //Decoradores Hooks. [Para que se ejecuten, debes crear(instanciar la entidad) y salvar]

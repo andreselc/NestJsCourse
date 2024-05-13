@@ -3,7 +3,7 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-  "email":"riri@gmail.com",
+  "email":"alejandrina@gmail.com",
   "password": "12345"
 }
 
@@ -12,7 +12,7 @@ POST http://localhost:3000/auth/signin
 content-type: application/json
 
 {
-  "email":"riri@gmail.com",
+  "email":"alejandra@gmail.com",
   "password": "12345"
 }
 
@@ -23,10 +23,10 @@ GET http://localhost:3000/auth/whoami
 POST http://localhost:3000/auth/signout
 
 ### Encontrar un usuario en particular
-GET http://localhost:3000/auth/3
+GET http://localhost:3000/auth/2
 
 ### Encontrar todos los usuarios dado un email
-GET http://localhost:3000/auth?email=asdf@asdf.com
+GET http://localhost:3000/auth?email=alejandro@gmail.com
 
 ### Eliminar usuario dado un ID
 
